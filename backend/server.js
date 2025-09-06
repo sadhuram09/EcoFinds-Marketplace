@@ -207,6 +207,7 @@ app.delete("/products/:id", authenticateToken, async (req, res) => {
 });
 
 // Cart APIs
+//
 app.post("/cart", authenticateToken, async (req, res) => {
   try {
     const { productId, quantity } = req.body;
@@ -269,6 +270,7 @@ app.delete("/cart/:productId", authenticateToken, async (req, res) => {
   }
 });
 
+//
 // Order APIs
 app.post("/orders", authenticateToken, async (req, res) => {
   try {
